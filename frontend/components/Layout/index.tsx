@@ -13,7 +13,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <main className="sandbox">
       <Navbar />
       <Header />
-      <Box sx={{ position: "relative", overflow: "hidden" }}>{children}</Box>
+      <Box sx={{ position: "relative", overflow: "hidden", m: "auto" }}>
+        {children}
+      </Box>
       <Footer />
     </main>
   );

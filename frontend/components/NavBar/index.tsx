@@ -24,9 +24,14 @@ function Navbar() {
       }}
     >
       <Stack direction="row" justifyContent="space-between">
-        <Stack direction="row" gap={3}>
+        <Stack direction="row" gap={3} alignItems="center">
           <Link href="/">
-            <Image src="/" height={50} width={50} alt="logo" />
+            <Image
+              src="/Images/Logo/logo2.png"
+              height={80}
+              width={80}
+              alt="logo"
+            />
           </Link>
           <Link href="/">
             <Typography>DaoDemic</Typography>

@@ -14,7 +14,6 @@ function Header() {
           sx={{
             fontFamily: "Moonbright",
             fontSize: "70px",
-            alignSelf: "flex-start",
           }}
         >
           DaoDemic
@@ -32,7 +31,7 @@ function Header() {
             Get some tokens
           </Button>
           <Button
-            href="/"
+            href="/products"
             sx={{
               backgroundColor: "#6a6161",
               border: "1px solid transparent",
