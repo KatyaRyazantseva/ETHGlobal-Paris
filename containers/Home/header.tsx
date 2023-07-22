@@ -8,7 +8,7 @@ function Header() {
         direction="column"
         alignItems="center"
         justifyContent="center"
-        sx={{ m: "2em", p: "1em" }}
+        sx={{ m: "2em", p: "1em", width: "90%" }}
       >
         <Typography
           sx={{
@@ -40,10 +40,15 @@ function Header() {
               color: "white",
             }}
           >
-            {" "}
             Spend your tokens
           </Button>
         </Stack>
+        <hr
+          style={{
+            border: "2px solid blue",
+            borderImage: "linear-gradient(to right, #3966FF, #FF599C) 1",
+          }}
+        />
       </Stack>
     </>
   );
