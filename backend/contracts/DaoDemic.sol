@@ -4,10 +4,14 @@ pragma solidity ^0.8.9;
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "./DaoDemic.sol";
+
+interface IERC20DaoDemic is IERC20{
+    function mint(address to, uint256 amount) external;
+}
 
 contract DAOdemic is Pausable, AccessControl {
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
-    bytes32 public constant SPONSOR_ROLE = keccak256("SPONSOR_ROLE");
     bytes32 public constant DAO_ROLE = keccak256("DAO_ROLE");
 
     uint256 public grantSupply;
@@ -22,16 +26,16 @@ contract DAOdemic is Pausable, AccessControl {
 
     Grant[] public grants;
 
-    IERC20 public daotoken;
+    IERC20DaoDemic public daotoken;
 
     constructor(address _daotoken) {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(PAUSER_ROLE, msg.sender);
         _grantRole(DAO_ROLE, msg.sender);
-        daotoken = IERC20(_daotoken);
+        daotoken = IERC20DaoDemic(_daotoken);
     }
 
-    function EarnRewards(uint256 _amount) public {
+    function MintRewards(uint256 _amount) public onlyRole(DAO_ROLE) {
         daotoken.mint(msg.sender, _amount);
     }
 
