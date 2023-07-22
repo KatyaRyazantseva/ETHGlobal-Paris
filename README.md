@@ -110,6 +110,11 @@
 9. **Bug Testing and Quality Assurance:** Students can assist in identifying and testing for bugs and errors in the sponsor's software or applications, ensuring a smooth user experience.
 10. **Educational Content Creation:** Students can create educational materials and tutorials to help users understand the sponsor's products or services better.
 
+<!-- Deployed Dapp URL -->
+## :link: Deployed Dapp URL 
+
+
+
 <!-- Screenshots -->
 ### :camera: Screenshots
 
@@ -124,45 +129,35 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
+    <li><a href="https://www.biconomy.io/">Typescript</a></li>
     <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+   
   </ul>
 </details>
 
+
 <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
+<summary>Backend</summary>
+  <ul> 
+    <li><a href="https://www.hardhat.org/">>hardhat</a></li>
+    <li><a href="https://www.soliditylang.org/">Typescript</a></li>
   </ul>
 </details>
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
 
 <details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
-  </ul>
+<summary>Web3</summary>
+  <li><a href="https://www.infura.io/">infura</a></li>
+  <li><a href="https:/www.faucet.goerli.linea.build/)/">Chainlink</a></li>
+  <ul> 
+</details>
+  
+  <details>
+<summary>Challenges and Solutions</summary>
+- Testnet deployment and verifying contracts
+- Connecting backend with frontend
+
+ <ul> 
 </details>
 
 <!-- Features -->
