@@ -8,7 +8,7 @@ import {
   BiconomySmartAccountConfig,
   DEFAULT_ENTRYPOINT_ADDRESS,
 } from "@biconomy/account";
-import { Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 import { IBundler, Bundler } from "@biconomy/bundler";
 import { IPaymaster, BiconomyPaymaster } from "@biconomy/paymaster";
 
@@ -111,17 +111,19 @@ const Home = () => {
   };
 
   return (
-    <Stack direction="row" alignItems="center" gap={2}>
-      <button onClick={!provider ? login : logout}>
+    <Stack direction="column" alignItems="center">
+      <Button onClick={!provider ? login : logout}>
         {!provider ? "Connect Wallet" : "Disconnect Wallet"}
-      </button>
+      </Button>
 
       {loading && <h2>Loading Smart Account...</h2>}
 
       {address && (
         <div>
-          <h2>Smart Account Address</h2>
-          <p>{address}</p>
+          <Typography sx={{ fontSize: "15px" }}>
+            {" "}
+            Your new address: {address}
+          </Typography>
         </div>
       )}
     </Stack>
