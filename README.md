@@ -51,6 +51,9 @@
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
+  * [Problem](#bomb-Problem)
+  * [Solution](#woman_technologist-Solution)
+  * [Deployed Dapp URL](#link-Deployed-Dapp-URL)
   * [Screenshots](#camera-screenshots)
   * [Tech Stack](#space_invader-tech-stack)
   * [Features](#dart-features)
@@ -59,17 +62,16 @@
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
   * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
   * [Run Locally](#running-run-locally)
   * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
+  * [Smart Contract](#exploding_head-Smart-Contracts)
 - [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
+- [Team](#wave-Team)
 - [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
+- [Useful Links](#link-Useful-Links)
+  * [DAODemic Whitepaper](#scroll-ESGROW-Whitepaper)
+  * [Demo](#cinema-Demo)
+- [Acknowledgments](#gem-Acknowledgements)
 
   
 
@@ -273,16 +275,25 @@ function App() {
 <!-- Roadmap -->
 ## :compass: Roadmap
 
-* [x] Todo 1
-* [ ] Todo 2
+* :white_check_mark: Readme
+* :white_check_mark: Canva sketching
+* :white_check_mark: Front-end design
+* :white_check_mark: Managment contract
+* :white_check_mark: Hardhat deployment
+* :white_check_mark: Demo video 
 
 
 <!-- Contributing -->
 ## :wave: Contributing
 
-<a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
-</a>
+| Member | Title | Description | Linkedin | GitHub   |
+| ----------- | ----------- | ----------- |----------- |----------- |
+| Nada Jabr | Project Leader | Manage project content |https://www.linkedin.com/in/nada-jabr-15838b39/ | NJ-2021 - CryptoStein |
+| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
+| Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719 |
+| Samuel Anthony | Full-stack Developer| Design UI, UX| https://www.linkedin.com/in/sathelle/ | Topichido |
+| Ogunsakin Tope | Solidity Developer | Smart contract coding|https://www.linkedin.com/in/tope-emmanuel-ogunsakin/ | thellecodes |
+
 
 
 Contributions are always welcome!
