@@ -195,12 +195,6 @@ To run this project, you will need to add the following environment variables to
 <!-- Prerequisites -->
 ### :bangbang: Prerequisites
 
-This project uses Yarn as package manager
-
-```bash
- npm install --global yarn
-```
-
 <!-- Run Locally -->
 ### :running: Run Locally
 
