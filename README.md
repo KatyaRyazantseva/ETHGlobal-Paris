@@ -149,9 +149,9 @@ Maybe you can mention me or this repo in the acknowledgements too
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Primary Color | ![#1f6f7f](https://via.placeholder.com/10/222831?text=+) ##1f6f7f |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
+| Secondary Color | ![#c34328](https://via.placeholder.com/10/393E46?text=+) #c34328 |
+| Accent Color | ![#ba9b73](https://via.placeholder.com/10/00ADB5?text=+) #ba9b73 |
+| Text Color | ![#0e3343](https://via.placeholder.com/10/EEEEEE?text=+) #0e3343 |
 
 
 <!-- Env Variables -->
