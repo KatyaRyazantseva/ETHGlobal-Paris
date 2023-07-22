@@ -1,21 +1,9 @@
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
+import Navbar from "../components/NavBar";
 
 const Index = () => {
-  const SocialLoginDynamic = dynamic(
-    () => import("../components/scw").then((res) => res.default),
-    {
-      ssr: false,
-    }
-  );
-
-  return (
-    <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <SocialLoginDynamic />
-      </Suspense>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Index;
