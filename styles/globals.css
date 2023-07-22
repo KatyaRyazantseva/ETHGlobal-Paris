@@ -49,3 +49,10 @@ button {
     background: rgb(55, 54, 54);
   }
 }
+
+@font-face {
+  font-family: "Moonbright";
+  src: url("../public/Fonts/MoonbrightDemo-1GGn2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

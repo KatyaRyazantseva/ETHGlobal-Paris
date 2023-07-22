@@ -1,34 +1,344 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<div align="center">
+ <img src="public/Images/Logo/f16d9f3d-5521-4f76-ba09-ecfb6af93289.png" alt="logo" width="200" height="auto" />
 
-First, run the development server:
+
+
+
+  <DAODemic>
+  
+  <p>
+    An awesome README template for your projects! 
+  </p>
+  
+  
+<!-- Badges -->
+<p>
+  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
+  </a>
+  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
+    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
+  </a>
+  <a href="https://github.com/Louis3797/awesome-readme-template/stargazers">
+    <img src="https://img.shields.io/github/stars/Louis3797/awesome-readme-template" alt="stars" />
+  </a>
+  <a href="https://github.com/Louis3797/awesome-readme-template/issues/">
+    <img src="https://img.shields.io/github/issues/Louis3797/awesome-readme-template" alt="open issues" />
+  </a>
+  <a href="https://github.com/Louis3797/awesome-readme-template/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/Louis3797/awesome-readme-template.svg" alt="license" />
+  </a>
+</p>
+   
+<h4>
+    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
+  <span> · </span>
+    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
+  <span> · </span>
+    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
+  <span> · </span>
+    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
+  </h4>
+</div>
+
+<br />
+
+<!-- Table of Contents -->
+# :notebook_with_decorative_cover: Table of Contents
+
+- [About the Project](#star2-about-the-project)
+  * [Problem](#bomb-Problem)
+  * [Solution](#woman_technologist-Solution)
+  * [Deployed Dapp URL](#link-Deployed-Dapp-URL)
+  * [Screenshots](#camera-screenshots)
+  * [Tech Stack](#space_invader-tech-stack)
+  * [Features](#dart-features)
+  * [Color Reference](#art-color-reference)
+  * [Environment Variables](#key-environment-variables)
+- [Getting Started](#toolbox-getting-started)
+  * [Prerequisites](#bangbang-prerequisites)
+  * [Installation](#gear-installation)
+  * [Run Locally](#running-run-locally)
+  * [Deployment](#triangular_flag_on_post-deployment)
+  * [Smart Contract](#exploding_head-Smart-Contracts)
+- [Roadmap](#compass-roadmap)
+- [Team](#wave-Team)
+- [Contact](#handshake-contact)
+- [Useful Links](#link-Useful-Links)
+  * [DAODemic Whitepaper](#scroll-ESGROW-Whitepaper)
+  * [Demo](#cinema-Demo)
+- [Acknowledgments](#gem-Acknowledgements)
+
+  
+
+<!-- About the Project -->
+## :star2: About the Project
+**DAODemic** is a revolutionary platform that bridges the gap between sponsors and students within a dynamic decentralized autonomous organization (DAO). Our primary objective is to foster meaningful connections and mutual benefits by incentivizing active student participation in various community activities. Through our ecosystem, sponsors can reward dedicated students with exclusive vouchers to attend events, conferences, Internship Opportunities, Mentorship Programs, Access to Tools and Resources. We aim to create a vibrant community where students thrive and sponsors find potential talents, making education a rewarding journey for all.
+
+
+<!-- Problem -->
+## :bomb: Problem
+**Sponsors: They need/want someone to solve/contribute in their project(s) in many different ways:**
+
+1. Market Research
+2. Community Engagement
+3. Social Media Management
+4. User Experience (UX) and User Interface (UI) Design
+5. Content Creation
+6. Event Planning and Organization
+7. Data Analysis
+8. Translation and Localization
+9. Bug Testing and Quality Assurance
+10. Educational Content Creation
+
+
+<!-- Solution -->
+## :woman_technologist: Solution
+
+**Students: They can help/support sponsors with the below missions:** 
+
+1. **Market Research:** Students can conduct market research to identify new trends, opportunities, and customer preferences in the web3 space. This valuable data can help sponsors refine their strategies and make informed business decisions.
+2. **Community Engagement:** Students can actively engage with the sponsor's community, participate in discussions, and provide valuable feedback. Their fresh perspective and enthusiasm can foster a stronger sense of community and loyalty among users.
+3. **Social Media Management:** Students can manage social media channels, create engaging content, and implement social media campaigns to increase brand awareness and drive user engagement.
+4. **User Experience (UX) and User Interface (UI) Design:** Students skilled in UX/UI design can help improve the sponsor's website or application, making it more user-friendly and visually appealing.
+5. **Content Creation:** Beyond written content, students can create multimedia content such as videos, infographics, and animations to enhance the sponsor's marketing efforts and educational materials.
+6. **Event Planning and Organization:** Students can assist in organizing webinars, workshops, and conferences, helping sponsors create valuable networking opportunities and educational events.
+7. **Data Analysis:** Students proficient in data analysis can help sponsors gather and analyze data to gain insights into user behavior, market trends, and platform performance.
+8. **Translation and Localization:** For sponsors with a global presence, students can offer language skills to translate content and ensure it resonates with diverse audiences.
+9. **Bug Testing and Quality Assurance:** Students can assist in identifying and testing for bugs and errors in the sponsor's software or applications, ensuring a smooth user experience.
+10. **Educational Content Creation:** Students can create educational materials and tutorials to help users understand the sponsor's products or services better.
+
+<!-- Deployed Dapp URL -->
+## :link: Deployed Dapp URL 
+
+
+
+<!-- Screenshots -->
+### :camera: Screenshots
+
+<div align="center"> 
+  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+</div>
+
+
+<!-- TechStack -->
+### :space_invader: Tech Stack
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.biconomy.io/">Typescript</a></li>
+    <li><a href="https://nextjs.org/">Next.js</a></li>
+   
+  </ul>
+</details>
+
+
+<details>
+<summary>Backend</summary>
+  <ul> 
+    <li><a href="https://www.hardhat.org/">>hardhat</a></li>
+    <li><a href="https://www.soliditylang.org/">Typescript</a></li>
+  </ul>
+</details>
+
+
+<details>
+<summary>Web3</summary>
+  <li><a href="https://www.infura.io/">infura</a></li>
+  <li><a href="https:/www.faucet.goerli.linea.build/)/">Chainlink</a></li>
+  <ul> 
+</details>
+  
+  <details>
+<summary>Challenges and Solutions</summary>
+- Testnet deployment and verifying contracts
+- Connecting backend with frontend
+
+ <ul> 
+</details>
+
+<!-- Features -->
+### :dart: Features
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+<!-- Color Reference -->
+### :art: Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Primary Color | ![#1f6f7f](https://via.placeholder.com/10/222831?text=+) ##1f6f7f |
+| Secondary Color | ![#c34328](https://via.placeholder.com/10/393E46?text=+) #c34328 |
+| Accent Color | ![#ba9b73](https://via.placeholder.com/10/00ADB5?text=+) #ba9b73 |
+| Text Color | ![#0e3343](https://via.placeholder.com/10/EEEEEE?text=+) #0e3343 |
+
+
+<!-- Env Variables -->
+### :key: Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
+
+<!-- Getting Started -->
+## 	:toolbox: Getting Started
+
+<!-- Prerequisites -->
+### :bangbang: Prerequisites
+
+This project uses Yarn as package manager
 
 ```bash
-npm run dev
-# or
-yarn dev
+ npm install --global yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- Installation -->
+### :gear: Installation
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Install my-project with npm
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+  yarn install my-project
+  cd my-project
+```
+   
+<!-- Running Tests -->
+### :test_tube: Running Tests
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To run tests, run the following command
 
-## Learn More
+```bash
+  yarn test test
+```
 
-To learn more about Next.js, take a look at the following resources:
+<!-- Run Locally -->
+### :running: Run Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Clone the project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+  git clone https://github.com/Louis3797/awesome-readme-template.git
+```
 
-## Deploy on Vercel
+Go to the project directory
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+  cd my-project
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Install dependencies
+
+```bash
+  yarn install
+```
+
+Start the server
+
+```bash
+  yarn start
+```
+
+
+<!-- Deployment -->
+### :triangular_flag_on_post: Deployment
+
+To deploy this project run
+
+```bash
+  yarn deploy
+```
+
+
+<!-- Usage -->
+## :eyes: Usage
+
+Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
+
+
+```javascript
+import Component from 'my-project'
+
+function App() {
+  return <Component />
+}
+```
+
+<!-- Roadmap -->
+## :compass: Roadmap
+
+* :white_check_mark: Readme
+* :white_check_mark: Canva sketching
+* :white_check_mark: Front-end design
+* :white_check_mark: Managment contract
+* :white_check_mark: Hardhat deployment
+* :white_check_mark: Demo video 
+
+
+<!-- Contributing -->
+## :wave: Contributing
+
+| Member | Title | Description | Linkedin | GitHub   |
+| ----------- | ----------- | ----------- |----------- |----------- |
+| Nada Jabr | Project Leader | Manage project content |https://www.linkedin.com/in/nada-jabr-15838b39/ | NJ-2021 - CryptoStein |
+| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
+| Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719 |
+| Samuel Anthony | Full-stack Developer| Design UI, UX| https://www.linkedin.com/in/sathelle/ | Topichido |
+| Ogunsakin Tope | Solidity Developer | Smart contract coding|https://www.linkedin.com/in/tope-emmanuel-ogunsakin/ | thellecodes |
+
+
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+
+<!-- Code of Conduct -->
+### :scroll: Code of Conduct
+
+Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
+
+<!-- FAQ -->
+## :grey_question: FAQ
+
+- Question 1
+
+  + Answer 1
+
+- Question 2
+
+  + Answer 2
+
+
+<!-- License -->
+## :warning: License
+
+Distributed under the no License. See LICENSE.txt for more information.
+
+
+<!-- Contact -->
+## :handshake: Contact
+
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+
+Project Link: [https://github.com/Louis3797/awesome-readme-template](https://github.com/Louis3797/awesome-readme-template)
+
+
+<!-- Acknowledgments -->
+## :gem: Acknowledgements
+
+Use this section to mention useful resources and libraries that you have used in your projects.
+
+ - [Shields.io](https://shields.io/)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
+ - [Readme Template](https://github.com/othneildrew/Best-README-Template)
+

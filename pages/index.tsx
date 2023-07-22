@@ -1,21 +1,8 @@
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
+import React from "react";
+import Header from "../containers/Home/header";
 
-const Index = () => {
-  const SocialLoginDynamic = dynamic(
-    () => import("../components/scw").then((res) => res.default),
-    {
-      ssr: false,
-    }
-  );
-
-  return (
-    <div>
-      <Suspense fallback={<div>Loading...</div>}>
-        <SocialLoginDynamic />
-      </Suspense>
-    </div>
-  );
+const index = () => {
+  return <></>;
 };
 
-export default Index;
+export default index;
