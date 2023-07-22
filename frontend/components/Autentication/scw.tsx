@@ -1,119 +1,127 @@
-import { useCallback, useEffect, useState } from "react";
-import { ethers } from "ethers";
-import { ChainId } from "@biconomy/core-types";
+import Head from "next/head";
+import { useState, useEffect, useRef } from "react";
 import SocialLogin from "@biconomy/web3-auth";
-import SmartAccount from "@biconomy/smart-account";
+import { ChainId } from "@biconomy/core-types";
+import { ethers } from "ethers";
+import {
+  BiconomySmartAccount,
+  BiconomySmartAccountConfig,
+  DEFAULT_ENTRYPOINT_ADDRESS,
+} from "@biconomy/account";
 import { Stack, Typography } from "@mui/material";
+import { IBundler, Bundler } from "@biconomy/bundler";
+import { IPaymaster, BiconomyPaymaster } from "@biconomy/paymaster";
+
+const bundler: IBundler = new Bundler({
+  bundlerUrl: "https://bundler.biconomy.io/api/v2/80001/abc", // you can get this value from biconomy dashboard.
+  chainId: ChainId.POLYGON_MUMBAI, //
+  entryPointAddress: DEFAULT_ENTRYPOINT_ADDRESS,
+});
+
+const paymaster: IPaymaster = new BiconomyPaymaster({
+  paymasterUrl: process.env.NEXT_PUBLIC_BICONOMY_PAYMASTER_URL || "",
+});
 
 const Home = () => {
-  const [provider, setProvider] = useState<any>();
-  const [account, setAccount] = useState<string>();
-  const [smartAccount, setSmartAccount] = useState<SmartAccount | null>(null);
-  const [scwAddress, setScwAddress] = useState("");
-  const [scwLoading, setScwLoading] = useState(false);
-  const [socialLoginSDK, setSocialLoginSDK] = useState<SocialLogin | null>(
-    null
-  );
+  const [smartAccount, setSmartAccount] = useState<any>(null);
+  const [interval, enableInterval] = useState(false);
+  const sdkRef = useRef<SocialLogin | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [provider, setProvider] = useState<any>(null);
+  const [address, setAddress] = useState<string>("");
 
-  const connectWeb3 = useCallback(async () => {
-    if (typeof window === "undefined") return;
-    console.log("socialLoginSDK", socialLoginSDK);
-    if (socialLoginSDK?.provider) {
-      const web3Provider = new ethers.providers.Web3Provider(
-        socialLoginSDK.provider
+  useEffect(() => {
+    let configureLogin: any;
+    if (interval) {
+      configureLogin = setInterval(() => {
+        if (!!sdkRef.current?.provider) {
+          setupSmartAccount();
+          clearInterval(configureLogin);
+        }
+      }, 1000);
+    }
+  }, [interval]);
+
+  async function login() {
+    if (!sdkRef.current) {
+      const socialLoginSDK = new SocialLogin();
+      const signature1 = await socialLoginSDK.whitelistUrl(
+        "http://localhost:3000/"
       );
-      setProvider(web3Provider);
-      const accounts = await web3Provider.listAccounts();
-      setAccount(accounts[0]);
-      return;
+      await socialLoginSDK.init({
+        chainId: ethers.utils.hexValue(ChainId.POLYGON_MUMBAI).toString(),
+        network: "testnet",
+        whitelistUrls: {
+          "http://localhost:3000/": signature1,
+        },
+      });
+      sdkRef.current = socialLoginSDK;
     }
-    if (socialLoginSDK) {
-      socialLoginSDK.showWallet();
-      return socialLoginSDK;
+    if (!sdkRef.current.provider) {
+      sdkRef.current.showWallet();
+      enableInterval(true);
+    } else {
+      setupSmartAccount();
     }
-    const sdk = new SocialLogin();
-    await sdk.init({
-      chainId: ethers.utils.hexValue(80001),
-    });
-    setSocialLoginSDK(sdk);
-    sdk.showWallet();
-    return socialLoginSDK;
-  }, [socialLoginSDK]);
+  }
 
-  // if wallet already connected close widget
-  useEffect(() => {
-    console.log("hidelwallet");
-    if (socialLoginSDK && socialLoginSDK.provider) {
-      socialLoginSDK.hideWallet();
+  async function setupSmartAccount() {
+    if (!sdkRef?.current?.provider) return;
+    sdkRef.current.hideWallet();
+    setLoading(true);
+    const web3Provider = new ethers.providers.Web3Provider(
+      sdkRef.current.provider
+    );
+    setProvider(web3Provider);
+
+    try {
+      const biconomySmartAccountConfig: BiconomySmartAccountConfig = {
+        signer: web3Provider.getSigner(),
+        chainId: ChainId.POLYGON_MUMBAI, //
+        bundler: bundler,
+        paymaster: paymaster,
+      };
+      let biconomySmartAccount = new BiconomySmartAccount(
+        biconomySmartAccountConfig
+      );
+      biconomySmartAccount = await biconomySmartAccount.init();
+      setAddress(await biconomySmartAccount.getSmartAccountAddress());
+      console.log(
+        "address",
+        await biconomySmartAccount.getSmartAccountAddress()
+      );
+
+      setSmartAccount(biconomySmartAccount);
+      setLoading(false);
+    } catch (err) {
+      console.log("error setting up smart account... ", err);
     }
-  }, [account, socialLoginSDK]);
+  }
 
-  // after metamask login -> get provider event
-  useEffect(() => {
-    const interval = setInterval(async () => {
-      if (account) {
-        clearInterval(interval);
-      }
-      if (socialLoginSDK?.provider && !account) {
-        connectWeb3();
-      }
-    }, 1000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, [account, connectWeb3, socialLoginSDK]);
-
-  const disconnectWeb3 = async () => {
-    if (!socialLoginSDK || !socialLoginSDK.web3auth) {
+  const logout = async () => {
+    if (!sdkRef.current) {
       console.error("Web3Modal not initialized.");
       return;
     }
-    await socialLoginSDK.logout();
-    socialLoginSDK.hideWallet();
-    setProvider(undefined);
-    setAccount(undefined);
-    setScwAddress("");
+    await sdkRef.current.logout();
+    sdkRef.current.hideWallet();
+    setSmartAccount(null);
+    setAddress("");
+    enableInterval(false);
   };
-
-  useEffect(() => {
-    async function setupSmartAccount() {
-      setScwAddress("");
-      setScwLoading(true);
-      const smartAccount = new SmartAccount(provider, {
-        activeNetworkId: ChainId.GOERLI,
-        supportedNetworksIds: [ChainId.GOERLI],
-      });
-      await smartAccount.init();
-      const context = smartAccount.getSmartAccountContext();
-      setScwAddress(context.baseWallet.getAddress());
-      setSmartAccount(smartAccount);
-      setScwLoading(false);
-    }
-    if (!!provider && !!account) {
-      setupSmartAccount();
-      console.log("Provider...", provider);
-    }
-  }, [account, provider]);
 
   return (
     <Stack direction="row" alignItems="center" gap={2}>
-      <button onClick={!account ? connectWeb3 : disconnectWeb3}>
-        {!account ? "Connect Wallet" : "Disconnect Wallet"}
+      <button onClick={!provider ? login : logout}>
+        {!provider ? "Connect Wallet" : "Disconnect Wallet"}
       </button>
 
-      {account && (
-        <Stack direction="column">
-          <Typography sx={{ color: "#c546c9ed" }}>EOA Address</Typography>
-          <p style={{ color: "#64a364" }}>{account}</p>
-        </Stack>
-      )}
+      {loading && <h2>Loading Smart Account...</h2>}
 
-      {scwLoading && <h2>Loading Smart Account...</h2>}
-
-      {scwAddress && (
+      {address && (
         <div>
           <h2>Smart Account Address</h2>
-          <p>{scwAddress}</p>
+          <p>{address}</p>
         </div>
       )}
     </Stack>
