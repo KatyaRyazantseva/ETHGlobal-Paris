@@ -1,15 +1,8 @@
-<!--
-Hey, thanks for using the awesome-readme-template template.  
-If you have any enhancements, then fork this project and create a pull request 
-or just open an issue with the label "enhancement".
 
-Don't forget to give this project a star for additional support ;)
-Maybe you can mention me or this repo in the acknowledgements too
--->
-<div align="center">
 
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <![DAODemic](https://github.com/marita703/ethglobalhackatonproject/assets/88503953/6154b6da-bacb-4660-8116-fda801ba2749)>
+
+  <DAODemic>
   
   <p>
     An awesome README template for your projects! 
