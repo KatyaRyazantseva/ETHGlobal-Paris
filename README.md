@@ -201,50 +201,31 @@ This project uses Yarn as package manager
  npm install --global yarn
 ```
 
-<!-- Installation -->
-### :gear: Installation
-
-Install my-project with npm
-
-```bash
-  yarn install my-project
-  cd my-project
-```
-   
-<!-- Running Tests -->
-### :test_tube: Running Tests
-
-To run tests, run the following command
-
-```bash
-  yarn test test
-```
-
 <!-- Run Locally -->
 ### :running: Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
+  git clone git@github.com:marita703/ethglobalhackatonproject.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd ethglobalhackathonproject
 ```
 
 Install dependencies
 
 ```bash
-  yarn install
+  npm i install
 ```
 
 Start the server
 
 ```bash
-  yarn start
+  npm run dev
 ```
 
 
@@ -254,7 +235,7 @@ Start the server
 To deploy this project run
 
 ```bash
-  yarn deploy
+  npx hardhat run --network localhost scripts/deploy.ts
 ```
 
 
