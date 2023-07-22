@@ -239,20 +239,6 @@ To deploy this project run
 ```
 
 
-<!-- Usage -->
-## :eyes: Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
-
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
-
 <!-- Roadmap -->
 ## :compass: Roadmap
 
@@ -285,10 +271,18 @@ Email - daodemic@gmail.com
 Project Link: [https://github.com/Louis3797/awesome-readme-template](https://github.com/Louis3797/awesome-readme-template)
 
 
+ <!-- Useful Links -->
+## :link: Useful Links
+ 
+  - ## :scroll: DAODemic Whitepaper 
+        [https://docs.google.com/document/d/1qxE1_XfKBJBBLmMxybLEAJp9OeDAND_nN-6jrxwf6F8/edit?usp=sharing/](https://small-pasta-fb5.notion.site/White-Paper-258ebcbf6c3c45cc90290e1e6ae631be?pvs=4)
+   <!-- Demo -->
+   
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
 
-Use this section to mention useful resources and libraries that you have used in your projects.
+Use this section
+to mention useful resources and libraries that you have used in your projects.
 
  - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
  - [Readme Template](https://github.com/othneildrew/Best-README-Template)
