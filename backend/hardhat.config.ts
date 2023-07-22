@@ -12,12 +12,12 @@ const config: HardhatUserConfig = {
     lineatestnet: {
       url: `https://linea-goerli.infura.io/v3/${process.env.INFURA_API_KEY}`,
       accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+        process.env.METAMASK_PRIVATE_KEY !== undefined ? [process.env.METAMASK_PRIVATE_KEY] : [],
     },
   },
   etherscan: {
     apiKey: {
-      lineatestnet: process.env.ETH_API_KEY!
+      lineatestnet: process.env.ETHERSCAN_API_KEY!
     },
     customChains: [
       {
