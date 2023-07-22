@@ -286,42 +286,14 @@ function App() {
 <!-- Contributing -->
 ## :wave: Contributing
 
-| Member | Title | Description | Linkedin | GitHub   |
-| ----------- | ----------- | ----------- |----------- |----------- |
-| Nada Jabr | Project Leader | Manage project content |https://www.linkedin.com/in/nada-jabr-15838b39/ | NJ-2021 - CryptoStein |
-| Paul Oamen | Technical Advisor | Advise on front-end and back-end technicals|https://www.linkedin.com/in/paule-oamen/ | AgentPoles |
-| Thanh Nguyen | Product Coordinator | Coordinate the project technicals | https://www.linkedin.com/in/nguyenphuocxuanthanh/ |zoeynguyen1719 |
-| Samuel Anthony | Full-stack Developer| Design UI, UX| https://www.linkedin.com/in/sathelle/ | Topichido |
-| Ogunsakin Tope | Solidity Developer | Smart contract coding|https://www.linkedin.com/in/tope-emmanuel-ogunsakin/ | thellecodes |
+| Member | Title | Linkedin | GitHub   |
+| ----------- | ----------- |----------- |----------- |
+| Katya Ryazantseva | Solidity developer, backedn | https://www.linkedin.com/in/ekaterina-ryazantseva/| KatyaRyazantseva |
+| Kelly ZHANG | Designer| https://www.linkedin.com/in/k-elly-zhang/ | kzg5 |
+| Lin HUANG | Smart Contract | https://www.linkedin.com/in/linnn-huang/ | linnnnnnh |
+| Maria del Mar Martinez | Frontend developer | https://www.linkedin.com/in/maramartinez/ |marita703 |
+| Nada Jabr | Project Manager | https://www.linkedin.com/in/nada-jabr-15838b39/| NJ-2021 |
 
-
-
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
-
-<!-- FAQ -->
-## :grey_question: FAQ
-
-- Question 1
-
-  + Answer 1
-
-- Question 2
-
-  + Answer 2
-
-
-<!-- License -->
-## :warning: License
-
-Distributed under the no License. See LICENSE.txt for more information.
 
 
 <!-- Contact -->
