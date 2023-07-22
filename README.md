@@ -1,6 +1,6 @@
 
 
- <img src="![DAODemic](https://github.com/marita703/ethglobalhackatonproject/assets/88503953/351a9dde-bcc7-4890-ab65-95bde9e02fc8)" alt="logo" width="200" height="auto" />
+ <img src="public/Images/Logo" alt="logo" width="200" height="auto" />
 
 
 
