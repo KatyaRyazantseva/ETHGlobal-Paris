@@ -1,6 +1,6 @@
 
 
-  <img hight="50px" width="50px" ![DAODemic](https://github.com/marita703/ethglobalhackatonproject/assets/88503953/6154b6da-bacb-4660-8116-fda801ba2749)/>
+  <img hight="50" width="50" ![DAODemic](https://github.com/marita703/ethglobalhackatonproject/assets/88503953/6154b6da-bacb-4660-8116-fda801ba2749)/>
 
   <DAODemic>
   
