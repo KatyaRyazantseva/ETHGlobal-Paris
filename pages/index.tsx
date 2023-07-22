@@ -1,9 +1,12 @@
-import dynamic from "next/dynamic";
-import { Suspense } from "react";
-import Navbar from "../components/NavBar";
+import React from "react";
+import Header from "../containers/Home/header";
 
-const Index = () => {
-  return <div></div>;
+const index = () => {
+  return (
+    <>
+      <Header></Header>
+    </>
+  );
 };
 
-export default Index;
+export default index;
