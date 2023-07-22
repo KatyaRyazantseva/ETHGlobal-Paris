@@ -114,15 +114,15 @@
 
 <!-- Deployed Dapp URL -->
 ## :link: Deployed Dapp URL 
-
+http://esgapp.us-east-1.elasticbeanstalk.com/
 
 
 <!-- Screenshots -->
 ### :camera: Screenshots
 
-<div align="center"> 
+  <div align="center"> 
   <img src="frontend/public/Images/Logo/PLEARN FLOWCHART (1).png" alt="screenshot" />
-</div>
+  </div>
 
 
 <!-- TechStack -->
