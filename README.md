@@ -1,6 +1,6 @@
 
 <div align="center">
- <img src="public/Images/Logo/f16d9f3d-5521-4f76-ba09-ecfb6af93289.png" alt="logo" width="200" height="auto" />
+ <img src="frontend/public/Images/Logo/f16d9f3d-5521-4f76-ba09-ecfb6af93289.png" alt="logo" width="200" height="auto" />
 
 
 
