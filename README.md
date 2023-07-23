@@ -114,7 +114,7 @@
 
 <!-- Deployed Dapp URL -->
 ## :link: Deployed Dapp URL 
-http://esgapp.us-east-1.elasticbeanstalk.com/
+https://www.loom.com/share/8d44c4da78c4467b89a5430caf80b4d3?sid=9a04102c-29ba-4975-a4e9-d9b67247eab9
 
 
 <!-- Screenshots -->
