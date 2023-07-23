@@ -105,7 +105,7 @@ function MissionForm() {
             variant="outlined"
             required
             margin="dense"
-            sx={{ backgroundColor: "#6060605c" }}
+            sx={{ backgroundColor: "#beb0b05c" }}
           >
             Name
           </TextField>
@@ -116,7 +116,7 @@ function MissionForm() {
             variant="outlined"
             required
             margin="dense"
-            sx={{ backgroundColor: "#6060605c", color: "white" }}
+            sx={{ backgroundColor: "#beb0b05c", color: "white" }}
           >
             Name
           </TextField>
@@ -127,7 +127,7 @@ function MissionForm() {
             variant="outlined"
             required
             margin="dense"
-            sx={{ backgroundColor: "#6060605c" }}
+            sx={{ backgroundColor: "#beb0b05c" }}
           >
             Name
           </TextField>
@@ -138,7 +138,7 @@ function MissionForm() {
             variant="outlined"
             required
             margin="dense"
-            sx={{ backgroundColor: "#6060605c" }}
+            sx={{ backgroundColor: "#beb0b05c" }}
           >
             Name
           </TextField>

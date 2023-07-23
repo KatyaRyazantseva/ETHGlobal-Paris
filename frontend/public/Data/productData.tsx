@@ -1,4 +1,5 @@
 interface product {
+  imageurl: string;
   name: string;
   price: number;
   description: string;
@@ -12,6 +13,7 @@ const productData: product[] = [
     description:
       "Join EthCC Hackathon! Code, connect, innovate. Your ticket to crypto development!",
     slug: "1",
+    imageurl: "/Images/PricesLogos/EthGlobal.png",
   },
   {
     name: " Intership",
@@ -19,6 +21,7 @@ const productData: product[] = [
     description:
       "Secure your future! 3-month Ledger internship. Explore crypto & blockchain tech.",
     slug: "2",
+    imageurl: "/Images/PricesLogos/Ledger.png",
   },
   {
     name: "Training to Devconect",
@@ -26,6 +29,7 @@ const productData: product[] = [
     description:
       "Devconnect ticket: Network, learn, innovate. Your entry to the tech frontier!",
     slug: "3",
+    imageurl: "/Images/PricesLogos/Group.png",
   },
   {
     name: "Solidity Bootcamp",
@@ -33,6 +37,7 @@ const productData: product[] = [
     description:
       "Dive into blockchain! 6-month Solidity Bootcamp. Fast-track your coding prowess.",
     slug: "3",
+    imageurl: "/Images/PricesLogos/Encode.png",
   },
 ];
 
