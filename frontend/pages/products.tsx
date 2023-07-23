@@ -10,7 +10,7 @@ function products() {
       alignItems="center"
       sx={{
         height: "100vh",
-        m: "2em",
+        m: "0.5em",
         p: "1em",
       }}
     >
@@ -42,7 +42,7 @@ function products() {
             >
               <Button
                 sx={{ color: "#2e2d2d" }}
-                href={`/product/${product.slug}`}
+                href={`/products/${product.slug}`}
               >
                 <Stack
                   direction="column"

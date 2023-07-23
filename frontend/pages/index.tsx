@@ -12,8 +12,7 @@ const index = () => {
         direction="column"
         alignItems="center"
         sx={{
-          height: "100vh",
-          m: "2em",
+          m: "0.5em",
           p: "1em",
         }}
       >

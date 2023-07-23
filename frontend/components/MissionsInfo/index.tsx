@@ -12,8 +12,13 @@ function MissionsInfo() {
   let element = data.find((ele) => ele.slug === slug);
 
   return (
-    <Stack direction="column" sx={{ m: "2em" }}>
-      <Stack direction="row">
+    <Stack direction="column" sx={{ m: "4em" }} alignItems="center">
+      <Stack
+        direction="row"
+        alignSelf="flex-start"
+        alignItems="center"
+        justifyContent="center"
+      >
         <Image
           height={100}
           width={100}
@@ -22,7 +27,9 @@ function MissionsInfo() {
         />
         <h1>{element?.partnerName}</h1>
       </Stack>
-      <h2>{element?.description}</h2>
+      <p
+        style={{ fontSize: "20px" }}
+      >{`Description: ${element?.description}`}</p>
     </Stack>
   );
 }

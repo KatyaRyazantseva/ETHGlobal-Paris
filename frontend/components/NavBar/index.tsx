@@ -1,4 +1,4 @@
-import { AppBar, Stack, Typography } from "@mui/material";
+import { AppBar, Button, Stack, Typography } from "@mui/material";
 import React, { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,9 +18,10 @@ function Navbar() {
       position="sticky"
       sx={{
         px: 3,
-        py: 2.5,
+        py: 1,
         bgcolor: "transparent",
         backdropFilter: "blur(8px)",
+        borderBottom: "0.8px solid white",
       }}
     >
       <Stack direction="row" justifyContent="space-between">
@@ -34,8 +35,31 @@ function Navbar() {
             />
           </Link>
           <Link href="/">
-            <Typography>DaoDemic</Typography>
+            <Typography fontFamily="Moonbright" fontSize={40}>
+              DaoDemic
+            </Typography>
           </Link>
+
+          <Button
+            href="/"
+            sx={{
+              border: "1px solid transparent",
+              borderRadius: "5px",
+              color: "white",
+            }}
+          >
+            Products
+          </Button>
+          <Button
+            href="/products"
+            sx={{
+              border: "1px solid transparent",
+              borderRadius: "2px",
+              color: "white",
+            }}
+          >
+            Redeem
+          </Button>
         </Stack>
         <Suspense fallback={<div>Loading...</div>}>
           <SocialLoginDynamic />
