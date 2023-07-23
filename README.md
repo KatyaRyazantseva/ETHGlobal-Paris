@@ -141,8 +141,8 @@ http://esgapp.us-east-1.elasticbeanstalk.com/
 <details>
 <summary>Backend</summary>
   <ul> 
-    <li><a href="https://www.hardhat.org/">>hardhat</a></li>
-    <li><a href="https://www.soliditylang.org/">Typescript</a></li>
+    <li><a href="https://www.hardhat.org/">hardhat</a></li>
+    <li><a href="https://www.soliditylang.org/">Solidity</a></li>
   </ul>
 </details>
 
