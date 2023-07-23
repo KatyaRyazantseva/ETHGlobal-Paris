@@ -271,7 +271,7 @@ Project Link: [https://github.com/Louis3797/awesome-readme-template](https://git
 ## :link: Useful Links
  
   - ## :scroll: DAODemic Whitepaper 
-        [https://docs.google.com/document/d/1qxE1_XfKBJBBLmMxybLEAJp9OeDAND_nN-6jrxwf6F8/edit?usp=sharing/](https://small-pasta-fb5.notion.site/White-Paper-258ebcbf6c3c45cc90290e1e6ae631be?pvs=4)
+        https://small-pasta-fb5.notion.site/White-Paper-258ebcbf6c3c45cc90290e1e6ae631be?pvs=4
    <!-- Demo -->
    
 <!-- Acknowledgments -->
