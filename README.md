@@ -251,9 +251,9 @@ To deploy this project run
 
 | Member | Title | Linkedin | GitHub   |
 | ----------- | ----------- |----------- |----------- |
-| Katya Ryazantseva | Solidity developer, backedn | https://www.linkedin.com/in/ekaterina-ryazantseva/| KatyaRyazantseva |
+| Katya Ryazantseva | Solidity developer, backend | https://www.linkedin.com/in/ekaterina-ryazantseva/| KatyaRyazantseva |
 | Kelly ZHANG | Designer| https://www.linkedin.com/in/k-elly-zhang/ | kzg5 |
-| Lin HUANG | Smart Contract | https://www.linkedin.com/in/linnn-huang/ | linnnnnnh |
+| Lin HUANG | Solidity developer | https://www.linkedin.com/in/linnn-huang/ | linnnnnnh |
 | Maria del Mar Martinez | Frontend developer | https://www.linkedin.com/in/maramartinez/ |marita703 |
 | Nada Jabr | Project Manager | https://www.linkedin.com/in/nada-jabr-15838b39/| NJ-2021 |
 
