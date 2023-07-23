@@ -110,19 +110,25 @@ const Home = () => {
     enableInterval(false);
   };
 
+  const cutAndReplaceMiddleNumber = (walletAddress: string) =>
+    `${walletAddress.slice(0, 4)}...${walletAddress.slice(-4)}`;
   return (
-    <Stack direction="column" alignItems="center">
-      <Button onClick={!provider ? login : logout}>
+    <Stack
+      direction="row"
+      alignItems="center"
+      justifyContent="center"
+      spacing={2}
+    >
+      <Button sx={{}} onClick={!provider ? login : logout}>
         {!provider ? "Connect Wallet" : "Disconnect Wallet"}
       </Button>
 
-      {loading && <h2>Loading Smart Account...</h2>}
+      {loading && <p>Loading Smart Account...</p>}
 
       {address && (
         <div>
           <Typography sx={{ fontSize: "15px" }}>
-            {" "}
-            Your new address: {address}
+            {cutAndReplaceMiddleNumber(address)}
           </Typography>
         </div>
       )}
