@@ -3,32 +3,11 @@ import { Button, FormControl, Stack, TextField, useTheme } from "@mui/material";
 import router from "next/router";
 import { ethers } from "ethers";
 import { create } from "zustand";
+import TOKEN_ABI from "../../utils/DAOToken.json";
 
-const CONTRACT_ADDRESS = "0x2D7cCb440dDD2DdA13DB1FeCdDaf35e1Aad2DEE4";
-const ABI = [
-  {
-    inputs: [
-      {
-        internalType: "address",
-        name: "to",
-        type: "address",
-      },
-      {
-        internalType: "uint256",
-        name: "amount",
-        type: "uint256",
-      },
-    ],
-    name: "mint",
-    outputs: [],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-];
-
-const RPC_URL =
-  "https://linea-goerli.infura.io/v3/1ae95434611847faa61b88d87314076b";
-const PRIVATE_KEY = process.env.NEXT_PUBLIC_PRIVATEKEY;
+const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_TOKEN_CONTRACT_ADDRESS || "";
+const RPC_URL = process.env.NEXT_PUBLIC_RPC_URL;;
+const PRIVATE_KEY = process.env.NEXT_PUBLIC_PRIVATEKEY || "";
 
 export const executeTransaction = async (address: string) => {
   const recipientAddress = address;
@@ -36,7 +15,7 @@ export const executeTransaction = async (address: string) => {
   const provider = new ethers.providers.JsonRpcProvider(RPC_URL);
   const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
 
-  const contract = new ethers.Contract(CONTRACT_ADDRESS, ABI, wallet);
+  const contract = new ethers.Contract(CONTRACT_ADDRESS, TOKEN_ABI, wallet);
   const amountInWei = ethers.utils.parseUnits((1).toString(), 6);
 
   const nonce = await wallet.getTransactionCount();

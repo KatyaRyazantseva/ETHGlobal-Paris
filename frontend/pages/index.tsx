@@ -2,8 +2,40 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import data from "../public/Data/data";
+import { ethers } from "ethers";
+import TOKEN_ABI from "../utils/DAOToken.json";
 
 import { Box, Button, Grid, Stack, Typography } from "@mui/material";
+
+const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_TOKEN_CONTRACT_ADDRESS || "";
+const RPC_URL = process.env.NEXT_PUBLIC_RPC_URL;
+const PRIVATE_KEY = process.env.NEXT_PUBLIC_PRIVATEKEY || "";
+
+export const executeTransaction = async (address: string) => {
+const provider = new ethers.providers.JsonRpcProvider(RPC_URL);
+const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
+const contract = new ethers.Contract(CONTRACT_ADDRESS, TOKEN_ABI);
+
+const nonce = await wallet.getTransactionCount();
+  const gasPrice = await provider.getGasPrice();
+  const gasLimit = await contract.estimateGas.balanceOf();
+
+  const transaction = {
+    to: CONTRACT_ADDRESS,
+    nonce,
+    gasPrice,
+    gasLimit,
+    data: contract.interface.encodeFunctionData("balanceOf", [
+      process.env.NEXT_PUBLIC_SMART_ACCOUNT,
+    ]),
+  };
+
+  const transactionResponse = await wallet.sendTransaction(transaction);
+  const transactionReceipt = await transactionResponse.wait();
+  console.log(transactionReceipt);
+
+  return transactionReceipt;
+};
 
 const index = () => {
   return (
