@@ -85,7 +85,8 @@ const Home = () => {
         biconomySmartAccountConfig
       );
       biconomySmartAccount = await biconomySmartAccount.init();
-      setAddress(await biconomySmartAccount.getSmartAccountAddress());
+      const address = await biconomySmartAccount.getSmartAccountAddress();
+      setAddress(address);
       console.log(
         "address",
         await biconomySmartAccount.getSmartAccountAddress()
