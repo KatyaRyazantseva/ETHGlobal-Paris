@@ -131,7 +131,7 @@ http://esgapp.us-east-1.elasticbeanstalk.com/
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://www.biconomy.io/">Typescript</a></li>
+    <li><a href="https://www.biconomy.io/">biconomy</a></li>
     <li><a href="https://nextjs.org/">Next.js</a></li>
    
   </ul>
@@ -150,7 +150,8 @@ http://esgapp.us-east-1.elasticbeanstalk.com/
 <details>
 <summary>Web3</summary>
   <li><a href="https://www.infura.io/">infura</a></li>
-  <li><a href="https:/www.faucet.goerli.linea.build/)/">Chainlink</a></li>
+  <li><a href="https:/www.faucet.goerli.linea.build/)/">linea</a></li>
+  <li><a href="https://www.metamask.io//">metamask</a></li>
   <ul> 
 </details>
   
