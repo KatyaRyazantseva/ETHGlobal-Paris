@@ -16,7 +16,7 @@ function products() {
     >
       <Grid
         container
-        gap={0.5}
+        gap={2}
         sx={{
           m: "auto",
           p: "1rem",

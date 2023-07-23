@@ -61,7 +61,7 @@ function Navbar() {
             Redeem
           </Button>
           <Button
-            href="/products"
+            href="/sponsors"
             sx={{
               border: "1px solid transparent",
               borderRadius: "2px",
