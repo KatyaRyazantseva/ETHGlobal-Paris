@@ -9,19 +9,29 @@ const productData: product[] = [
   {
     name: " Event Ticket",
     price: 500,
-    description: "Ticket to EthCC",
+    description:
+      "Join EthCC Hackathon! Code, connect, innovate. Your ticket to crypto development!",
     slug: "1",
   },
   {
     name: " Intership",
     price: 2000,
-    description: "3 month intership at Ledger",
+    description:
+      "Secure your future! 3-month Ledger internship. Explore crypto & blockchain tech.",
     slug: "2",
   },
   {
-    name: "Training Course",
+    name: "Training to Devconect",
     price: 1000,
-    description: "Solidity Bootcamp 6 months",
+    description:
+      "Devconnect ticket: Network, learn, innovate. Your entry to the tech frontier!",
+    slug: "3",
+  },
+  {
+    name: "Solidity Bootcamp",
+    price: 1000,
+    description:
+      "Dive into blockchain! 6-month Solidity Bootcamp. Fast-track your coding prowess.",
     slug: "3",
   },
 ];
