@@ -29,8 +29,8 @@ function Navbar() {
           <Link href="/">
             <Image
               src="/Images/Logo/logo2.png"
-              height={80}
-              width={80}
+              height={50}
+              width={50}
               alt="logo"
             />
           </Link>
@@ -48,7 +48,7 @@ function Navbar() {
               color: "white",
             }}
           >
-            Products
+            Projects
           </Button>
           <Button
             href="/products"
@@ -59,6 +59,16 @@ function Navbar() {
             }}
           >
             Redeem
+          </Button>
+          <Button
+            href="/products"
+            sx={{
+              border: "1px solid transparent",
+              borderRadius: "2px",
+              color: "white",
+            }}
+          >
+            Sponsors
           </Button>
         </Stack>
         <Suspense fallback={<div>Loading...</div>}>
